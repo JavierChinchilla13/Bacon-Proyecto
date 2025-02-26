@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: 28092f8ddd7c2ca43bfece2720b89419
+  productGUID: bb6bb856242b2814f97f48c323b98973
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Bacon Breakout
+  productName: Bacon_Proyect
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -247,7 +247,6 @@ PlayerSettings:
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
-  useCustomGradleSettingsTemplate: 0
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 1
   AndroidTargetDevices: 0
@@ -268,6 +267,7 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   chromeosInputEmulation: 1
+  AndroidMinifyWithR8: 0
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
@@ -771,11 +771,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: b0b8c5f1-143a-4f3a-9209-d5982917bf15
+  cloudProjectId: ebff60e5-ffc7-4dd0-b77a-0bd6e635e903
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Bacon Breakout 2025-02-17_19-11-52
-  organizationId: javidilugo
+  projectName: Bacon_Proyect
+  organizationId: jozandro23
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

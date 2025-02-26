@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b666dc8e44d3f604dab67e732a670686
+guid: 4685baa0d642b2a43ab8bab6e2faf9db
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,7 +93,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CerditoProta_Idle_35x35_0
+      name: CerditoProta_Run_35x35 1_0
       rect:
         serializedVersion: 2
         x: 6
@@ -107,14 +107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 301272f4f52e31a4b9abdb0bae309a6b
-      internalID: -420925875
+      spriteID: edbaa0e48d628744da17c8342905bc1c
+      internalID: 624496829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerditoProta_Idle_35x35_1
+      name: CerditoProta_Run_35x35 1_1
       rect:
         serializedVersion: 2
         x: 41
@@ -128,14 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc80f6bf9119c3b459739ae673dca562
-      internalID: 1031788979
+      spriteID: 8df92d1391f66ff48975cbc2d8bdeb9c
+      internalID: 833154556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerditoProta_Idle_35x35_2
+      name: CerditoProta_Run_35x35 1_2
       rect:
         serializedVersion: 2
         x: 76
@@ -149,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518d7b0e8576f6f4c9594d6052404b2d
-      internalID: 1033598640
+      spriteID: 7e906b7b6bc155f44a2dd9e58ac65846
+      internalID: -1002511487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerditoProta_Idle_35x35_3
+      name: CerditoProta_Run_35x35 1_3
       rect:
         serializedVersion: 2
         x: 111
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d608a0fa69bd96488bcef8380b6aba9
-      internalID: -627528785
+      spriteID: 48004a69eaa84664dbeed02637cd9536
+      internalID: 167720656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerditoProta_Idle_35x35_4
+      name: CerditoProta_Run_35x35 1_4
       rect:
         serializedVersion: 2
         x: 146
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84fc91f4043da8e488d0a971e405f868
-      internalID: 1348433934
+      spriteID: 3b8c9ab6147408b45aadf368d676a547
+      internalID: -1103175982
       vertices: []
       indices: 
       edges: []
@@ -208,11 +208,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CerditoProta_Idle_35x35_0: -420925875
-      CerditoProta_Idle_35x35_1: 1031788979
-      CerditoProta_Idle_35x35_2: 1033598640
-      CerditoProta_Idle_35x35_3: -627528785
-      CerditoProta_Idle_35x35_4: 1348433934
+      CerditoProta_Run_35x35 1_0: 624496829
+      CerditoProta_Run_35x35 1_1: 833154556
+      CerditoProta_Run_35x35 1_2: -1002511487
+      CerditoProta_Run_35x35 1_3: 167720656
+      CerditoProta_Run_35x35 1_4: -1103175982
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
