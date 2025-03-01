@@ -98,13 +98,13 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
             rb2d.velocity = new Vector2(runSpeed, rb2d.velocity.y);
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
 
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
             rb2d.velocity = new Vector2(-runSpeed, rb2d.velocity.y);
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
 
         }
         else
