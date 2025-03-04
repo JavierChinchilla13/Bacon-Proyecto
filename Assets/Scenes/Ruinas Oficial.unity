@@ -15329,6 +15329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manzana
       objectReference: {fileID: 0}
+    - target: {fileID: 8230121302992744083, guid: e3efae1d86f690247a2bfe4f3f474090, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f72980e6c08f9ea4a980617a149697ee, type: 2}
     - target: {fileID: 8230121302992744109, guid: e3efae1d86f690247a2bfe4f3f474090, type: 3}
       propertyPath: m_RootOrder
       value: 5
