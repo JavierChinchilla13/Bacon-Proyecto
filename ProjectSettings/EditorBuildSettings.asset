@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Granja.unity
+    guid: 8bfa026d4913f454da544d507710d3c7
+  - enabled: 1
+    path: Assets/Scenes/Bosque.unity
+    guid: 4bcdf9d18bcf8af439e8bfaae08680ff
+  - enabled: 1
+    path: Assets/Scenes/Ruinas Oficial.unity
+    guid: d7e72117a0b9c904e8bc3439cda401de
+  - enabled: 1
+    path: Assets/Scenes/FinalBoss.unity
+    guid: ed3de8a10e0cba24199773fac5bfb1ac
   m_configObjects: {}

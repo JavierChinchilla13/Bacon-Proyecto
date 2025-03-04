@@ -44,8 +44,6 @@ public class PlayerMove : MonoBehaviour
                 {
                     if (canDoubleJump)
                     {
-                        //ANIMACION SALTO DOBLE
-                        animator.SetBool("DoubleJump", true);
                         //REALIZA DOBLE SALTO
                         rb2d.velocity = new Vector2(rb2d.velocity.x, doubleJumpSpeed);
                         //NO PUEDE DAR DOBLE SALTO
