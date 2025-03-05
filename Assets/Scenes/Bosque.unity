@@ -2990,11 +2990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 733183954348206645, guid: e7d24141602108145be55f9cfc775c8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.066
+      value: -14.49
       objectReference: {fileID: 0}
     - target: {fileID: 733183954348206645, guid: e7d24141602108145be55f9cfc775c8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7000008
+      value: -1.71
       objectReference: {fileID: 0}
     - target: {fileID: 733183954348206645, guid: e7d24141602108145be55f9cfc775c8d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4790,7 +4790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909201799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.03, y: -1.64, z: -1}
+  m_LocalPosition: {x: -14.453999, y: -1.6499996, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5385,6 +5385,8 @@ GameObject:
   - component: {fileID: 1034604378}
   - component: {fileID: 1034604380}
   - component: {fileID: 1034604379}
+  - component: {fileID: 1034604382}
+  - component: {fileID: 1034604381}
   m_Layer: 0
   m_Name: KuribohAlado_80x80 (4)
   m_TagString: Untagged
@@ -5480,6 +5482,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1034604381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034604377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6b978707a48e438fdc85387a62428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1034604382
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034604377}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.57
 --- !u!1001 &1043756872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6531,6 +6561,8 @@ GameObject:
   - component: {fileID: 1189946380}
   - component: {fileID: 1189946382}
   - component: {fileID: 1189946381}
+  - component: {fileID: 1189946384}
+  - component: {fileID: 1189946383}
   m_Layer: 0
   m_Name: KuribohAlado_80x80 (2)
   m_TagString: Untagged
@@ -6626,6 +6658,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1189946383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189946379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6b978707a48e438fdc85387a62428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1189946384
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189946379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.57
 --- !u!1 &1214557300
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,6 +7700,8 @@ GameObject:
   - component: {fileID: 1464106613}
   - component: {fileID: 1464106615}
   - component: {fileID: 1464106614}
+  - component: {fileID: 1464106617}
+  - component: {fileID: 1464106616}
   m_Layer: 0
   m_Name: KuribohAlado_80x80 (3)
   m_TagString: Untagged
@@ -7735,6 +7797,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1464106616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464106612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6b978707a48e438fdc85387a62428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1464106617
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464106612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.57
 --- !u!1 &1471776540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12008,6 +12098,8 @@ GameObject:
   - component: {fileID: 1679960715}
   - component: {fileID: 1679960717}
   - component: {fileID: 1679960716}
+  - component: {fileID: 1679960719}
+  - component: {fileID: 1679960718}
   m_Layer: 0
   m_Name: KuribohAlado_80x80 (1)
   m_TagString: Untagged
@@ -12103,6 +12195,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1679960718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679960714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6b978707a48e438fdc85387a62428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1679960719
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679960714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.57
 --- !u!1001 &1682125118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14192,6 +14312,8 @@ GameObject:
   - component: {fileID: 2134079875}
   - component: {fileID: 2134079877}
   - component: {fileID: 2134079876}
+  - component: {fileID: 2134079879}
+  - component: {fileID: 2134079878}
   m_Layer: 0
   m_Name: KuribohAlado_80x80
   m_TagString: Untagged
@@ -14287,6 +14409,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2134079878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134079874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb6b978707a48e438fdc85387a62428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &2134079879
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134079874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.57
 --- !u!1001 &2138394727
 PrefabInstance:
   m_ObjectHideFlags: 0
