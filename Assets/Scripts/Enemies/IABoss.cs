@@ -64,13 +64,13 @@ public class IABoss : MonoBehaviour
         if (transform.position.x > currentPosition.x)
         {
             bossSpriteRenderer.flipX = false;
-            bossCollider.transform.localScale = new Vector3(1, 1, 1);  // Reset collider scale
+            bossCollider.transform.localScale = new Vector3(-1,1,1);  // Reset collider scale
             bossAnimator.SetBool("Idle", false);
         }
         else if (transform.position.x < currentPosition.x)
         {
             bossSpriteRenderer.flipX = true;
-            bossCollider.transform.localScale = new Vector3(-1, 1, 1);  // Flip collider in X axis
+            bossCollider.transform.localScale = new Vector3(1,1,1);  // Flip collider in X axis
             bossAnimator.SetBool("Idle", false);
         }
         if (transform.position.x == currentPosition.x)
