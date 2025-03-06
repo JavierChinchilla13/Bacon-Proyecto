@@ -7,6 +7,7 @@ public class IABoss : MonoBehaviour
     public Animator bossAnimator;
     public SpriteRenderer bossSpriteRenderer;
     public PolygonCollider2D bossCollider;
+    public PolygonCollider2D HitbossCollider;
     public float movementSpeed = 1;
     private float bossWaitTime;
     public float initialWaitTime = 2;
@@ -65,17 +66,19 @@ public class IABoss : MonoBehaviour
         {
             bossSpriteRenderer.flipX = false;
             bossCollider.transform.localScale = new Vector3(-1,1,1);  // Reset collider scale
-            bossAnimator.SetBool("Idle", false);
+            HitbossCollider.transform.localScale = new Vector3(-1, 1, 1);
+            bossAnimator.SetBool("Carnicero_Idle", false);
         }
         else if (transform.position.x < currentPosition.x)
         {
             bossSpriteRenderer.flipX = true;
             bossCollider.transform.localScale = new Vector3(1,1,1);  // Flip collider in X axis
-            bossAnimator.SetBool("Idle", false);
+            HitbossCollider.transform.localScale = new Vector3(1, 1, 1);
+            bossAnimator.SetBool("Carnicero_Idle", false);
         }
         if (transform.position.x == currentPosition.x)
         {
-            bossAnimator.SetBool("Idle", true);
+            bossAnimator.SetBool("Carnicero_Idle", true);
         }
     }
 }
