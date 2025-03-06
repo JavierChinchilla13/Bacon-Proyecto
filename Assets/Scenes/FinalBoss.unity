@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 239376263}
   m_Layer: 0
   m_Name: Olla_40x35 (2)
-  m_TagString: Untagged
+  m_TagString: Olla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1153,7 +1153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715943225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.926, y: 0.116, z: 0}
+  m_LocalPosition: {x: -2.734, y: 0.078, z: 0}
   m_LocalScale: {x: 0.24112652, y: 0.22931574, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 778516134}
   m_Layer: 0
   m_Name: Olla_40x35
-  m_TagString: Untagged
+  m_TagString: Olla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1639,6 +1639,7 @@ GameObject:
   - component: {fileID: 906360904}
   - component: {fileID: 906360903}
   - component: {fileID: 906360907}
+  - component: {fileID: 906360908}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1745,6 +1746,21 @@ MonoBehaviour:
   optionsPanel: {fileID: 1323127534}
   gameCompleted: 1
   mainMenuButton: {fileID: 526630398}
+--- !u!114 &906360908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906360902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bac8d0efa72e9f49b04f803e711e130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  bossAnimator: {fileID: 0}
+  bossObject: {fileID: 0}
 --- !u!1001 &925481180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1854,6 +1870,9 @@ GameObject:
   - component: {fileID: 953100765}
   - component: {fileID: 953100769}
   - component: {fileID: 953100770}
+  - component: {fileID: 953100772}
+  - component: {fileID: 953100771}
+  - component: {fileID: 953100773}
   m_Layer: 0
   m_Name: Carnicero_Idle_50x50_0
   m_TagString: Untagged
@@ -2023,6 +2042,68 @@ MonoBehaviour:
   - {fileID: 1160709631}
   - {fileID: 715943226}
   - {fileID: 1035491992}
+--- !u!114 &953100771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953100764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bac8d0efa72e9f49b04f803e711e130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  bossAnimator: {fileID: 953100765}
+  bossObject: {fileID: 953100764}
+--- !u!61 &953100772
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953100764}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015181467, y: 0.4674507}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.88, y: 0.96}
+    newSize: {x: 0.88, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7661389, y: 0.025198638}
+  m_EdgeRadius: 0
+--- !u!50 &953100773
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953100764}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &991038667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2499,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280543380}
   m_CullTransparentMesh: 1
+--- !u!1 &1287266654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287266655}
+  - component: {fileID: 1287266656}
+  m_Layer: 0
+  m_Name: LevelBounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1287266655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287266654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6598985, y: 2.20659, z: -0.0879172}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287266656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287266654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fb9d319de6adf45868e9013915553d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1404641930}
 --- !u!1 &1323127534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,7 +4794,7 @@ GameObject:
   - component: {fileID: 1749105692}
   m_Layer: 0
   m_Name: Olla_40x35 (1)
-  m_TagString: Untagged
+  m_TagString: Olla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
