@@ -881,8 +881,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 199545405}
-  gameCompleted: 1
+  gameCompleted: 0
   mainMenuButton: {fileID: 1814921617}
+<<<<<<< HEAD
 --- !u!114 &233120627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,6 +897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baconCounterText: {fileID: 1433884524}
+=======
+  menuWarningText: {fileID: 0}
+>>>>>>> main
 --- !u!1 &243544935
 GameObject:
   m_ObjectHideFlags: 0

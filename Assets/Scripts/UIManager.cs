@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,25 +5,27 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
-    public bool gameCompleted;
+    public bool gameCompleted = false;
     public Button mainMenuButton;
+    public Text menuWarningText; // Texto de advertencia
+
+    void Start()
+    {
+        // Recuperar el estado de gameCompleted de PlayerPrefs
+        gameCompleted = PlayerPrefs.GetInt("GameCompleted", 0) == 1;
+        UpdateMenuButton();
+    }
 
     public void OptionsPanel()
     {
         Time.timeScale = 0;
         optionsPanel.SetActive(true);
-
     }
 
     public void Return()
     {
         Time.timeScale = 1;
         optionsPanel.SetActive(false);
-    }
-
-    public void AnotherOptions()
-    {
-
     }
 
     public void MainMenu()
@@ -37,19 +37,26 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            // Desactivar el botón
-            mainMenuButton.interactable = false;
-
-            // Cambiar color a oscuro
-            ColorBlock colors = mainMenuButton.colors;
-            colors.normalColor = Color.gray; // Cambia a un color oscuro
-            colors.disabledColor = Color.black; // Color cuando está deshabilitado
-            mainMenuButton.colors = colors;
+            menuWarningText.text = "¡Derrota al jefe antes de salir!"; // Mostrar advertencia
         }
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void UpdateMenuButton()
+    {
+        if (gameCompleted)
+        {
+            mainMenuButton.interactable = true;
+            menuWarningText.text = "";
+        }
+        else
+        {
+            mainMenuButton.interactable = false;
+            menuWarningText.text = "¡Derrota al jefe antes de salir!";
+        }
     }
 }
