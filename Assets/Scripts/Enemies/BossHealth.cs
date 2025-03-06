@@ -3,25 +3,24 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    public int maxHealth = 4; // Vidas del jefe
+    public int maxHealth = 4;
     private int currentHealth;
+    public Animator bossAnimator;
+    public GameObject bossObject;
 
-    public Animator bossAnimator; // Para animaciones de daño/muerte
-    public GameObject bossObject; // Para desactivar al jefe al morir
+    private UIManager uiManager; // Referencia al UIManager
 
     void Start()
     {
         currentHealth = maxHealth;
+        uiManager = FindObjectOfType<UIManager>(); // Encuentra el UIManager en la escena
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Si el jefe es golpeado por una olla
         if (collision.gameObject.CompareTag("Olla"))
         {
             TakeDamage();
-
-            // Hace que la olla desaparezca temporalmente
             StartCoroutine(HideObjectTemporarily(collision.gameObject));
         }
     }
@@ -29,11 +28,8 @@ public class BossHealth : MonoBehaviour
     void TakeDamage()
     {
         currentHealth--;
-
-        // Opcional: Animación de daño
         bossAnimator.SetTrigger("Hurt");
 
-        // Si la vida llega a 0, el jefe "muere"
         if (currentHealth <= 0)
         {
             StartCoroutine(Die());
@@ -42,20 +38,25 @@ public class BossHealth : MonoBehaviour
 
     IEnumerator Die()
     {
-        // Reproduce la animación de muerte
         bossAnimator.SetTrigger("Death");
-
-        // Espera 1 segundo antes de desactivar el jefe
         yield return new WaitForSeconds(1f);
-
-        // Desactiva el jefe
         bossObject.SetActive(false);
+
+        // Guardar en PlayerPrefs que el juego está completado
+        PlayerPrefs.SetInt("GameCompleted", 1);
+        PlayerPrefs.Save();
+
+        if (uiManager != null)
+        {
+            uiManager.gameCompleted = true;
+            uiManager.UpdateMenuButton();
+        }
     }
 
     IEnumerator HideObjectTemporarily(GameObject obj)
     {
-        obj.SetActive(false); // Desactiva la olla
-        yield return new WaitForSeconds(2f); // Tiempo antes de que reaparezca
-        obj.SetActive(true); // Reactiva la olla
+        obj.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        obj.SetActive(true);
     }
 }

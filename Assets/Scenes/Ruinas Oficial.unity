@@ -884,8 +884,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 199545405}
-  gameCompleted: 1
+  gameCompleted: 0
   mainMenuButton: {fileID: 1814921617}
+  menuWarningText: {fileID: 0}
 --- !u!1 &243544935
 GameObject:
   m_ObjectHideFlags: 0
