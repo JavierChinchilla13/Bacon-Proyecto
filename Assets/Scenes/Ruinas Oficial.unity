@@ -1430,6 +1430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 60628773}
   levelCleared: {fileID: 0}
+  closeDoor: {fileID: 0}
+  openDoor: {fileID: 0}
+  fruitDoorScript: {fileID: 0}
 --- !u!1001 &451491725
 PrefabInstance:
   m_ObjectHideFlags: 0
