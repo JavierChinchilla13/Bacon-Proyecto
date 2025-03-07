@@ -1,21 +1,17 @@
 using System.Collections;
 using UnityEngine;
-
 public class BossHealth : MonoBehaviour
 {
-    public int maxHealth = 4;
+    public int maxHealth = 4; // Vidas del jefe
     private int currentHealth;
-    public Animator bossAnimator;
-    public GameObject bossObject;
-
-    private UIManager uiManager; // Referencia al UIManager
-
+    public Animator bossAnimator; // Para animaciones de daño/muerte
+    public GameObject bossObject; // Para desactivar al jefe al morir
+    public GameObject door; // Agregar la puerta
     void Start()
     {
         currentHealth = maxHealth;
-        uiManager = FindObjectOfType<UIManager>(); // Encuentra el UIManager en la escena
+        door.SetActive(false); // Asegurar que la puerta esté desactivada al inicio
     }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Olla"))
@@ -24,35 +20,22 @@ public class BossHealth : MonoBehaviour
             StartCoroutine(HideObjectTemporarily(collision.gameObject));
         }
     }
-
     void TakeDamage()
     {
         currentHealth--;
         bossAnimator.SetTrigger("Hurt");
-
         if (currentHealth <= 0)
         {
             StartCoroutine(Die());
         }
     }
-
     IEnumerator Die()
     {
         bossAnimator.SetTrigger("Death");
         yield return new WaitForSeconds(1f);
-        bossObject.SetActive(false);
-
-        // Guardar en PlayerPrefs que el juego está completado
-        PlayerPrefs.SetInt("GameCompleted", 1);
-        PlayerPrefs.Save();
-
-        if (uiManager != null)
-        {
-            uiManager.gameCompleted = true;
-            uiManager.UpdateMenuButton();
-        }
+        bossObject.SetActive(false); // Desactiva al carnicero
+        door.SetActive(true); // Activa la puerta
     }
-
     IEnumerator HideObjectTemporarily(GameObject obj)
     {
         obj.SetActive(false);
