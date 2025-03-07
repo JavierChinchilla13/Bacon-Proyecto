@@ -6,13 +6,9 @@ using static PlayerSelect;
 
 public class ChangeSkin : MonoBehaviour
 {
-
-
     public GameObject skinPanel;
     public bool inDoor = false;
     public GameObject player;
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,10 +36,16 @@ public class ChangeSkin : MonoBehaviour
 
     public void SetPlayerBacon()
     {
-        PlayerPrefs.SetString("PlayerSelected", "Bacon");
-        ResetPlayerSkin();
+        if (BaconManager.baconCount >= 3) // Verificar si se han recolectado los 3 bacons
+        {
+            PlayerPrefs.SetString("PlayerSelected", "Bacon");
+            ResetPlayerSkin();
+        }
+        else
+        {
+            Debug.Log("¡Aún no has recolectado los 3 bacons!");
+        }
     }
-
 
     void ResetPlayerSkin()
     {

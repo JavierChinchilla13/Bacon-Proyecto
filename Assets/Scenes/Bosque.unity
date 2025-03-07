@@ -6299,6 +6299,7 @@ GameObject:
   - component: {fileID: 1173462897}
   - component: {fileID: 1173462896}
   - component: {fileID: 1173462895}
+  - component: {fileID: 1173462900}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6401,6 +6402,7 @@ RectTransform:
   - {fileID: 813274133}
   - {fileID: 830681136}
   - {fileID: 2056105870}
+  - {fileID: 1945631941}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6409,6 +6411,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1173462900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173462894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1138eacccdd4e444b6bf8739a1e3f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baconCounterText: {fileID: 1945631942}
 --- !u!1001 &1184036871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12967,6 +12982,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5579023127467870123, guid: 3881a9e68e652d748aeb846f08e1e8f5, type: 3}
   m_PrefabInstance: {fileID: 1923281691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1945631940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945631941}
+  - component: {fileID: 1945631943}
+  - component: {fileID: 1945631942}
+  m_Layer: 5
+  m_Name: BaconScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1945631941
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945631940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1173462899}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.952798}
+  m_AnchorMax: {x: 0, y: 0.952798}
+  m_AnchoredPosition: {x: 119.86261, y: -291.60004}
+  m_SizeDelta: {x: 110.1223, y: 27.4826}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1945631942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945631940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1945631943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945631940}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1961083226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13977,8 +14072,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bacon_16x16_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 882671697297458433, guid: 5ae666bf4b036f644bcf23663e1ec930, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5ae666bf4b036f644bcf23663e1ec930, type: 3}
+--- !u!1 &2054522937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 882671697297458437, guid: 5ae666bf4b036f644bcf23663e1ec930, type: 3}
+  m_PrefabInstance: {fileID: 2054522936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054522938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054522937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5c7a744b72746449cc0c978ec931e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baconID: Bacon2
 --- !u!1 &2056105867
 GameObject:
   m_ObjectHideFlags: 0
